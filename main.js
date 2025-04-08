@@ -71,23 +71,6 @@ navItems.forEach((navItem) => {
     });
 });
 
-// ScrollReveal({
-//     reset: true,
-//     distance: '60px',
-//     duration: 2500,
-//     delay: 100
-// });
-
-// ScrollReveal().reveal('.home .info h2, .section-title-01, .section-title-02', { delay : 500, origin: 'left'});
-// ScrollReveal().reveal('.home .info h3, .home .info p, .about-info .btn, .service-title', { delay : 600, origin: 'right'});
-// ScrollReveal().reveal('.home .info .btn', { delay : 700, origin: 'bottom'});
-// ScrollReveal().reveal('.media-icons i, .contact-left li', { delay : 500, origin: 'left', interval: 200});
-// ScrollReveal().reveal('.home-img, .about-info', { delay : 500, origin: 'bottom'});
-// ScrollReveal().reveal('.about .description, .contact-right p', { delay : 500, origin: 'right'});
-// ScrollReveal().reveal('.skills-description, .services__description, .contact-card, .contact-left h2', { delay : 700, origin: 'right'});
-// ScrollReveal().reveal('.services__card, .education, .portfolio .img-card', { delay : 800, origin: 'bottom', interval: 200});
-// ScrollReveal().reveal('footer .group, .contact-right, .img-card-container', { delay : 500, origin: 'top', interval: 200});
-
 // Replace the existing ScrollReveal section with this
 const sr = ScrollReveal({
     reset: true,
@@ -142,32 +125,32 @@ if (isMobile()) {
 } else {
     // Desktop animations (original settings with slight adjustments)
     sr.reveal('.home .info h2, .section-title-01, .section-title-02', { 
-        delay: 500, 
+        delay: 200, 
         origin: 'left'
     });
     sr.reveal('.home .info h3, .home .info p, .about-info .btn, .service-title', { 
-        delay: 600, 
+        delay: 300, 
         origin: 'right'
     });
     sr.reveal('.home .info .btn', { 
-        delay: 700, 
+        delay: 300, 
         origin: 'bottom'
     });
     sr.reveal('.media-icons i, .contact-left li', { 
-        delay: 500, 
+        delay: 200, 
         origin: 'left', 
         interval: 200
     });
     sr.reveal('.home-img, .about-info', { 
-        delay: 500, 
+        delay: 200, 
         origin: 'bottom'
     });
     sr.reveal('.skills-description, .services__description, .contact-card, .contact-left h2', { 
-        delay: 700, 
+        delay: 300, 
         origin: 'right'
     });
     sr.reveal('.services__card, .education, .portfolio .img-card', { 
-        delay: 800, 
+        delay: 300, 
         origin: 'bottom', 
         interval: 200
     });
