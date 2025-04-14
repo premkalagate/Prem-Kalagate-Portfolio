@@ -12,6 +12,15 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
   <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
   <script src="https://unpkg.com/scrollreveal"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+  </script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init({
+        publicKey: "HgCGcHUpvJnvVL38F",
+      });
+    })();
+  </script>
 </head>
 
 <body>
@@ -307,54 +316,54 @@
         </div>
         <div class="contact-right">
           <p>I'm always open to discussing <br><span> website development or partnerships.</span></p>
-          <form action="" class="contact-form">
+          <form class="contact-form">
             <div class="first-row">
-              <input type="text" placeholder="Name">
+              <input type="text" id="name" placeholder="Name">
             </div>
             <div class="second-row">
-              <input type="email" placeholder="Email">
-              <input type="text" placeholder="Subject">
+              <input type="email" id="email" placeholder="Email">
+              <input type="text" id="subject" placeholder="Subject">
             </div>
             <div class="third-row">
-              <textarea name="message" id="" rows="7" placeholder="Message"></textarea>
+              <textarea name="message" id="message" rows="7" placeholder="Message"></textarea>
             </div>
-            <button class="btn" type="submit">Send Message <i class="fas fa-paper-plane"></i></button>
           </form>
+          <button class="btn" type="submit" onclick="sendMail()">Send Message <i class="fas fa-paper-plane"></i></button>
         </div>
       </div>
     </div>
   </section>
 
   <footer>
-      <div class="footer-container">
-        <div class="about-me group">
-          <h2>Prem</h2>
-          <p>Full-Stack Developer</p>
-          <a href="#about">About Me</a>
-        </div>
-        <div class="hr"></div>
-          <div class="info group">
-            <h3>More</h3>
-            <ul>
-              <li><a href="#skills">Skills</a></li>
-              <li><a href="#services">Services</a></li>
-              <li><a href="#projects">Projects</a></li>
-              <li><a href="#contact">Contact</a></li>
-            </ul>
-          </div>
-        <div class="hr"></div>
-          <div class="follow group">
-            <h3>Follow</h3>
-            <ul>
-              <li><a href="https://www.github.com/premkalagate"><i class="fab fa-github"></i></a></li>
-              <li><a href="https://www.x.com/premkalagate"><i class="fab fa-twitter"></i></a></li>
-              <li><a href="https://www.linkedin.com/in/premkalagate"><i class="fab fa-linkedin"></i></a></li>
-            </ul>
-          </div>
+    <div class="footer-container">
+      <div class="about-me group">
+        <h2>Prem</h2>
+        <p>Full-Stack Developer</p>
+        <a href="#about">About Me</a>
       </div>
-      <div class="footer-copyright group">
-        <p>© 2025 by Prem Kalagate. All rights reserved.</p>
+      <div class="hr"></div>
+      <div class="info group">
+        <h3>More</h3>
+        <ul>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
       </div>
+      <div class="hr"></div>
+      <div class="follow group">
+        <h3>Follow</h3>
+        <ul>
+          <li><a href="https://www.github.com/premkalagate"><i class="fab fa-github"></i></a></li>
+          <li><a href="https://www.x.com/premkalagate"><i class="fab fa-twitter"></i></a></li>
+          <li><a href="https://www.linkedin.com/in/premkalagate"><i class="fab fa-linkedin"></i></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-copyright group">
+      <p>© 2025 by Prem Kalagate. All rights reserved.</p>
+    </div>
   </footer>
   <script src="main.js"></script>
 </body>
