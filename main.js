@@ -71,19 +71,16 @@ navItems.forEach((navItem) => {
     });
 });
 
-// Replace the existing ScrollReveal section with this
 const sr = ScrollReveal({
     reset: true,
     distance: '60px',
-    duration: 2000, // Reduced duration for better mobile performance
+    duration: 2000,
     delay: 100,
-    mobile: true // Ensure animations work on mobile
+    mobile: true
 });
 
-// Function to check if device is mobile
 const isMobile = () => window.innerWidth <= 768;
 
-// Adjusted reveal settings based on device
 if (isMobile()) {
     sr.reveal('.home .info h2, .section-title-01, .section-title-02', { 
         delay: 200, 
@@ -123,7 +120,6 @@ if (isMobile()) {
         distance: '20px'
     });
 } else {
-    // Desktop animations (original settings with slight adjustments)
     sr.reveal('.home .info h2, .section-title-01, .section-title-02', { 
         delay: 200, 
         origin: 'left'
@@ -156,7 +152,6 @@ if (isMobile()) {
     });
 }
 
-// Footer reveal remains the same for all devices
 sr.reveal('footer .group, .contact-right, .img-card-container', { 
     delay: 500, 
     origin: 'top', 
@@ -173,9 +168,7 @@ function sendMail() {
     const serviceID = "service_skf3ks9";
     const templateID = "template_gt36jk9";
     
-    emailjs
-        .send(serviceID, templateID, params)
-        .then((res)=> {
+    emailjs.send(serviceID, templateID, params).then((res)=> {
             document.getElementById("name").value = "",
             document.getElementById("email").value = "",
             document.getElementById("subject").value = "",
