@@ -73,8 +73,8 @@ navItems.forEach((navItem) => {
 
 const sr = ScrollReveal({
     reset: true,
-    distance: '60px',
-    duration: 2000,
+    distance: '50px',
+    duration: 1200,
     delay: 100,
     mobile: true
 });
@@ -95,13 +95,13 @@ if (isMobile()) {
     sr.reveal('.home .info .btn', { 
         delay: 400, 
         origin: 'bottom',
-        distance: '20px'
+        distance: '25px'
     });
     sr.reveal('.media-icons i, .contact-left li', { 
         delay: 200, 
         origin: 'left', 
         interval: 100,
-        distance: '20px'
+        distance: '25px'
     });
     sr.reveal('.home-img, .about-info', { 
         delay: 300, 
@@ -111,13 +111,13 @@ if (isMobile()) {
     sr.reveal('.skills-description, .services__description, .contact-card, .contact-left h2', { 
         delay: 300, 
         origin: 'top',
-        distance: '20px'
+        distance: '25px'
     });
     sr.reveal('.services__card, .education, .portfolio .img-card', { 
         delay: 200, 
         origin: 'bottom', 
         interval: 100,
-        distance: '20px'
+        distance: '25px'
     });
 } else {
     sr.reveal('.home .info h2, .section-title-01, .section-title-02', { 
@@ -135,7 +135,7 @@ if (isMobile()) {
     sr.reveal('.media-icons i, .contact-left li', { 
         delay: 200, 
         origin: 'left', 
-        interval: 200
+        interval: 150
     });
     sr.reveal('.home-img, .about-info', { 
         delay: 200, 
@@ -148,14 +148,14 @@ if (isMobile()) {
     sr.reveal('.services__card, .education, .portfolio .img-card', { 
         delay: 300, 
         origin: 'bottom', 
-        interval: 200
+        interval: 150
     });
 }
 
 sr.reveal('footer .group, .contact-right, .img-card-container', { 
-    delay: 500, 
+    delay: 400, 
     origin: 'top', 
-    interval: 200
+    interval: 150
 });
 
 function sendMail() {
