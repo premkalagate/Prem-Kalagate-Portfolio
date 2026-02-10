@@ -306,7 +306,6 @@ header.sticky .nav-bar {
     position: relative;
     max-width: 1250px;
     min-height: 100vh;
-    /* height: 700px; */
     margin-left: auto;
     margin-right: auto;
     padding: 4rem 2em;
@@ -334,6 +333,7 @@ header.sticky .nav-bar {
     margin-bottom: 2rem;
     background: linear-gradient(to top, transparent 0%, var(--first-color) 70%);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     opacity: 0.1;
 }
@@ -661,6 +661,7 @@ header.sticky .nav-bar {
     font-weight: 700;
     background: linear-gradient(to top, transparent 0%, var(--first-color) 30%);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     opacity: .9;
 }
@@ -782,6 +783,7 @@ footer a{
     font-weight: 600;
     background: linear-gradient(to top, transparent 0%, #fff 50%);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     opacity: .8;
 }
@@ -1207,25 +1209,25 @@ footer a{
     .home {
         padding: 2rem 1rem;
         min-height: auto;
-        padding-top: 100px;
+        padding-top: 50px;
     }
 
     .home-container .info h2 {
-        font-size: 2.2em;
-        line-height: 45px;
+        font-size: 2.6em;
+        line-height: 55px;
     }
 
     .home-container .info h3 {
-        font-size: 1.3em;
+        font-size: 1.5em;
     }
 
     .home-container .info p {
-        font-size: 0.95em;
+        font-size: 1.1em;
     }
 
     .home-container .home-img img {
-        width: 55%;
-        max-width: 280px;
+        width: 75%;
+        max-width: 350px;
     }
 
     .section-title-01 {
@@ -1301,21 +1303,25 @@ footer a{
     }
 
     .home {
-        padding-top: 90px;
+        padding-top: 65px;
     }
 
     .home-container .info h2 {
-        font-size: 1.9em;
-        line-height: 40px;
+        font-size: 2.4em;
+        line-height: 50px;
     }
 
     .home-container .info h3 {
-        font-size: 1.1em;
+        font-size: 1.4em;
+    }
+
+    .home-container .info p {
+        font-size: 1.05em;
     }
 
     .home-container .home-img img {
-        width: 65%;
-        max-width: 250px;
+        width: 80%;
+        max-width: 320px;
     }
 
     .section-title-01 {
@@ -1504,26 +1510,26 @@ footer a{
     }
     
     .home {
-        padding-top: 80px;
+        padding-top: 60px;
     }
     
     .home-container .info h2 {
-        font-size: 1.7em;
-        line-height: 38px;
+        font-size: 2.2em;
+        line-height: 48px;
     }
     
     .home-container .info h3 {
-        font-size: 1em;
-        line-height: 28px;
+        font-size: 1.3em;
+        line-height: 32px;
     }
     
     .home-container .info p {
-        font-size: 0.9em;
+        font-size: 1em;
     }
     
     .home-container .home-img img {
-        width: 70%;
-        max-width: 220px;
+        width: 85%;
+        max-width: 300px;
     }
     
     .section-title-01 {
@@ -1797,26 +1803,26 @@ footer a{
 /* Extra Small Mobile (320px to 375px) */
 @media screen and (max-width: 375px) {
     .home {
-        padding-top: 75px;
+        padding-top: 55px;
     }
     
     .home-container .info h2 {
-        font-size: 1.5em;
-        line-height: 35px;
+        font-size: 2em;
+        line-height: 45px;
     }
     
     .home-container .info h3 {
-        font-size: 0.95em;
-        line-height: 25px;
+        font-size: 1.2em;
+        line-height: 30px;
     }
     
     .home-container .info p {
-        font-size: 0.85em;
+        font-size: 0.95em;
     }
     
     .home-container .home-img img {
-        width: 75%;
-        max-width: 200px;
+        width: 90%;
+        max-width: 280px;
     }
     
     .section-title-01 {
@@ -1914,21 +1920,25 @@ footer a{
     }
     
     .home {
-        padding-top: 70px;
+        padding-top: 30px;
     }
     
     .home-container .info h2 {
-        font-size: 1.3em;
-        line-height: 32px;
+        font-size: 1.8em;
+        line-height: 40px;
     }
     
     .home-container .info h3 {
+        font-size: 1.1em;
+    }
+    
+    .home-container .info p {
         font-size: 0.9em;
     }
     
     .home-container .home-img img {
-        width: 80%;
-        max-width: 180px;
+        width: 95%;
+        max-width: 260px;
     }
     
     .section-title-01 {
