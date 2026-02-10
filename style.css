@@ -1601,7 +1601,6 @@ footer a{
     }
 
     .home-container .home-img img {
-        margin-top: 25px;
         width: 80%;
         max-width: 300px;
     }
@@ -1803,7 +1802,7 @@ footer a{
 /* Extra Small Mobile (320px to 375px) */
 @media screen and (max-width: 375px) {
     .home {
-        padding-top: 55px;
+        padding-top: 30px;
     }
     
     .home-container .info h2 {
